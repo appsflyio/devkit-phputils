@@ -1,0 +1,24 @@
+{
+    "name": "appsfly/devkit-phputils",
+    "type": "library",
+    "description": "This library contains resources to help communicate with appsfly.io execution server. For all communications with execution server, your application should be registered and a secret key needs to be generated. Please contact integrations@appsfly.io for your credientials. http://www.appsfly.io ",
+    "keywords": ["appsfly","appsfly-devkit-phputils"],
+    "homepage": "https://github.com/appsflyio/devkit-phputils",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Srikanth",
+            "email": "srikanth@appsfly.io",
+            "homepage": "https://appsfly.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "appsfly": "src"
+        }
+    }
+}
