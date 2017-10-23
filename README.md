@@ -29,3 +29,8 @@ Please contact integrations@appsfly.io for your credientials.
 | --- | --- |
 | INTENT | Intent is like an endpoint you are accessing to send messages |
 | PAYLOAD | Data payload |
+
+# Integration options  
+
+### Option 1: SDK
+The SDK can be included to handle authorization. There is no need for you to handle checksum generation and verification.
