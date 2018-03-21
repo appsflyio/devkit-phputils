@@ -7,7 +7,13 @@ $config = new AFConfig($repo_url,$secret_key,$app_key);
 $microModuleId="com.cleartrip.msactivities";
 $app_instance = new AFAppInstance($config,$microModuleId);
 $intent = "fetch_cities";
-$arr = new StdClass();
-$intent_data=json_encode($arr);
+$intentData = json_decode('{
+"trip_id": "180314157588",
+"contactDetails":{
+"name":"John Alex"
+},
+"payment_method":"online payment"
+}',true);
+$intent_data=json_encode($intentData);
 echo $app_instance->exec($intent,$intent_data,"generic");
  ?>
